@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private EditText mMessageEditText;
@@ -38,6 +39,7 @@ public static final String TAG ="MainActivity";
         Log.d(LOG_TAG, "Button clicked!");
         Intent intent = new Intent(this,main_score_board.class);
         String message = mMessageEditText.getText().toString();
+        Toast.makeText(this, "Target set for : " +mMessageEditText.getText(), Toast.LENGTH_SHORT).show();
         intent.putExtra(EXTRA_MESSAGE, message);
 
         startActivity(intent);

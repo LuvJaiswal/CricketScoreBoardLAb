@@ -58,7 +58,7 @@
     <TextView
 
         android:id="@+id/textView5"
-        android:layout_width="204dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="TARGET"
         android:textSize="36sp"
@@ -71,9 +71,11 @@
 
     <TextView
         android:id="@+id/trun"
-        android:layout_width="204dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:textSize="36sp"
+        android:text="hello"
+        android:layout_marginLeft="140dp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

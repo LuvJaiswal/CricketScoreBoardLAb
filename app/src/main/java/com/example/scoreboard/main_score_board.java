@@ -15,15 +15,20 @@ public class main_score_board extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_score_board);
         Intent intent = getIntent();
+
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.trun);
         textView.setText(message);
-display_run=findViewById(R.id.display_run);
+
+        display_run=findViewById(R.id.display_run);
+
+
+
     }
 
     public void update_1(View view) {
         teamScore= teamScore+1;
-displayScore(teamScore);
+        displayScore(teamScore);
 
 
     }
